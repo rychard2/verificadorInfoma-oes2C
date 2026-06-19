@@ -18,16 +18,11 @@ DOCTYPE html>
 <title>verificador</title>
 </head>
 
-<body>
-<header>
-<h1>Confere IA </h1>
-<nav>
-<a href="#">Início</a>
-</nav>
-</header>
-<main>
-<h2>Descubra a verdade passando o mouse</h2>
-<article>
+   <header>
+        <nav>
+    </nav>
+      <main>
+     <article>
 <div>
 <div>
 <img src=h"ttps://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png"&gt;
