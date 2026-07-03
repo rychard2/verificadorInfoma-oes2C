@@ -13,8 +13,14 @@ min-height: 100vh;
 
 main{
 flex: 1;
+display:flex;
+flex-direction:column;
+align-items:center;
 }
-
+section{
+    diplay:flex;
+    gap:16px;
+}
 .cabecalho{
 color:green;
 padding: 15px 25px;
@@ -24,8 +30,9 @@ align-items: center;
 background-color: #FFFF00;
 }
 
-.cartao{
 
+.cartao{
+margin:20px;
 width: 260px;
 height: 200px;
 }
@@ -37,7 +44,8 @@ width: 100%;
 .cartao-interno{ 
  
      position: relative;
-     transition: transform 0.8s
+     transition: transform 0.8s;
+     transform-style:preserve-3d;
 }
 .cartao:houver .cartao-interno{
     transform: rotateY (180deg)
