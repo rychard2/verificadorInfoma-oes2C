@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Fatos</title>
     <link rel="stylesheet" href="style.css">
-    <title>verificador</title>
 </head>
-
 <body>
-    <header>  class="cabecalho"
-        <h1>Confere IA </h1>
+    <header>
         <nav>
-            <a href="#">Início</a>
+            <h1>Checagem Animal</h1>
         </nav>
     </header>
+
     <main>
-        <h2>Descubra a verdade passando o mouse</h2>
-        <article>
-            <div>
-                <div>
-                    <img
-                        src="https://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png">
-                    <p>Pinguis conseguem voar como pássaros</p>
+        <article class="card">
+            <img src="https://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png" alt="Pinguim de gravata borboleta" class="card-img">
+            
+            <div class="card-content">
+                <h2>Pinguins conseguem voar como pássaros?</h2>
+                <p class="description">Muitas pessoas se perguntam se pinguins podem voar pelo ar assim como as outras aves.</p>
+                
+                <button id="btnVerificar">Verificar Resposta</button>
+                
+                <div id="resultado" class="resultado escondido">
+                    <span class="status falso">FALSO!</span>
+                    <p>Pinguins são aves marinhas que não voam no ar. Suas asas evoluíram para funcionar como nadadeiras adaptadas para o nado.</p>
                 </div>
-            </div>
-            <div>
-                <img src="https://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png">
-                <p>Pinguins não voam, mas são excelentes nadadores</p>
-            </div>
             </div>
         </article>
-        article>
-            <div>
-                <div>
-                    <img
-                        src="https://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png">
-                    <p>Pinguis conseguem voar como pássaros</p>
-                </div>
-            </div>
-            <div>
-                <img src="https://png.pngtree.com/png-clipart/20240830/original/pngtree-a-penguin-wearing-bow-tie-and-png-image_15883696.png">
-                <p>Pinguins não voam, mas são excelentes nadadores</p>
-            </div>
-            </div>
-        </article>article>
     </main>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,62 +1,88 @@
-{
-margin: 0;
-padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-body{
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+body {
+    background-color: #f0f2f5;
+    color: #333;
 }
 
-main{
-flex: 1;
-display: flex;
-flex-direction: column;
-align-items: center;
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
 }
 
-section{
-display: flex;
-gap:16px;
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
 }
 
-.cabecalho{
-color:green;
-padding: 15px 25px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: #FFFF00;
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    overflow: hidden;
 }
 
-.cartao{
-margin: 20px;
-width: 260px;
-height: 200px;
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #e2e8f0;
 }
 
-.cartao-imagem{
-width: 100%;
+.card-content {
+    padding: 1.5rem;
 }
 
-.cartao-interno{
-position: relative;
-transition: transform 0.8s;
-transform-style: preserve-3d;
+.card-content h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
-.cartao:hover .cartao-interno{
-transform: rotateY(180deg);
+.description {
+    color: #64748b;
+    margin-bottom: 1rem;
 }
 
-.cartao-frente, .cartao-verso{
-position: absolute;
-border-radius: 12px;
-box-shadow: 0 6px 12px rgba(0,0,0, 0.15);
-backface-visibility: hidden;
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
 }
 
-.cartao-verso{
-transform: rotateY(180deg);
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.resultado {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+.escondido {
+    display: none;
+}
+
+.status.falso {
+    display: inline-block;
+    color: #dc2626;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
